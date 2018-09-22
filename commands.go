@@ -1,16 +1,22 @@
 package main
 
 import (
-	"github.com/taskie/gtp"
-	"github.com/taskie/jc"
+	csvtcli "github.com/taskie/csvt/cli"
+	fwvcli "github.com/taskie/fwv/cli"
+	gtpcli "github.com/taskie/gtp/cli"
+	jccli "github.com/taskie/jc/cli"
+	leveletcli "github.com/taskie/levelet/cli"
 )
 
-type Command func(args []string)
+type Command func()
 
 func getCommands() map[string]Command {
 	return map[string]Command{
-		"jc": jc.Main,
-		"gtp": gtp.Main,
+		"jc":      jccli.Main,
+		"gtp":     gtpcli.Main,
+		"csvt":    csvtcli.Main,
+		"fwv":     fwvcli.Main,
+		"levelet": leveletcli.Main,
 
 		// system commands
 		"list":      list,

@@ -31,10 +31,11 @@ func main() {
 		os.Exit(1)
 	}
 
-	command(args)
+	os.Args = args
+	command()
 }
 
-func list(_ []string) {
+func list() {
 	names := make([]string, 0, 0)
 	for name := range getCommands() {
 		if !strings.HasPrefix(name, "-") {
@@ -47,7 +48,7 @@ func list(_ []string) {
 	}
 }
 
-func showVersion(_ []string) {
+func showVersion() {
 	fmt.Println(version)
 }
 
@@ -57,6 +58,6 @@ usage: ore COMMAND ARGS...
 detail: https://github.com/taskie/ore
 `
 
-func help(_ []string) {
+func help() {
 	fmt.Print(usage)
 }
