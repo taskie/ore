@@ -5,7 +5,7 @@ ore（俺）utils, packed in BusyBox-like way
 ## Install
 
 ```sh
-go install github.com/taskie/ore
+go install -ldflags "-s -w" github.com/taskie/ore
 ```
 
 ## Tools
