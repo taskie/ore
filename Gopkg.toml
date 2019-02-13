@@ -27,6 +27,10 @@
 
 [[constraint]]
   branch = "master"
+  name = "github.com/taskie/cliplus"
+
+[[constraint]]
+  branch = "master"
   name = "github.com/taskie/csvt"
 
 [[constraint]]

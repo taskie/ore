@@ -8,10 +8,8 @@ import (
 	leveletcli "github.com/taskie/levelet/cli"
 )
 
-type Command func()
-
-func getCommands() map[string]Command {
-	return map[string]Command{
+func getCommands() map[string]func() {
+	return map[string]func(){
 		"jc":      jccli.Main,
 		"gtp":     gtpcli.Main,
 		"csvt":    csvtcli.Main,

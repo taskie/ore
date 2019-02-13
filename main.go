@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"path/filepath"
 	"sort"
 	"strings"
+
+	"github.com/taskie/cliplus"
 )
 
 var (
@@ -14,25 +14,8 @@ var (
 )
 
 func main() {
-	commandName := filepath.Base(os.Args[0])
-	args := os.Args
-	if commandName == "oreutils" || commandName == "ore" {
-		if len(os.Args) <= 1 {
-			fmt.Fprintln(os.Stderr, "Please specify command")
-			os.Exit(1)
-		}
-		commandName = os.Args[1]
-		args = os.Args[1:]
-	}
-
-	command, ok := getCommands()[commandName]
-	if !ok {
-		fmt.Fprintln(os.Stderr, "Command \""+commandName+"\" is not found")
-		os.Exit(1)
-	}
-
-	os.Args = args
-	command()
+	cmd := cliplus.NewBusyCmd("ore", cliplus.NewMapMainResolver(getCommands()))
+	cmd.Main()
 }
 
 func list() {

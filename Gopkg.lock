@@ -42,6 +42,22 @@
   version = "v1.4.0"
 
 [[projects]]
+  digest = "1:ecd9aa82687cf31d1585d4ac61d0ba180e42e8a6182b85bd785fcca8dfeefc1b"
+  name = "github.com/joho/godotenv"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "23d116af351c84513e1946b527c88823e476be13"
+  version = "v1.3.0"
+
+[[projects]]
+  digest = "1:0a69a1c0db3591fcefb47f115b224592c8dfa4368b7ba9fae509d5e16cdc95c8"
+  name = "github.com/konsorten/go-windows-terminal-sequences"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242"
+  version = "v1.0.1"
+
+[[projects]]
   digest = "1:c658e84ad3916da105a761660dcaeb01e63416c8ec7bc62256a9b411a05fcd67"
   name = "github.com/mattn/go-colorable"
   packages = ["."]
@@ -58,16 +74,16 @@
   version = "v0.0.4"
 
 [[projects]]
-  digest = "1:d867dfa6751c8d7a435821ad3b736310c2ed68945d05b50fb9d23aee0540c8cc"
+  digest = "1:87c2e02fb01c27060ccc5ba7c5a407cc91147726f8f40b70cceeedbc52b1f3a8"
   name = "github.com/sirupsen/logrus"
   packages = ["."]
   pruneopts = "UT"
-  revision = "3e01752db0189b9157070a0e1668a620f9a85da2"
-  version = "v1.0.6"
+  revision = "e1e72e9de974bd926e5c56f83753fba2df402ce5"
+  version = "v1.3.0"
 
 [[projects]]
   branch = "master"
-  digest = "1:f2ffd421680b0a3f7887501b3c6974bcf19217ecd301d0e2c9b681940ec363d5"
+  digest = "1:685fdfea42d825ebd39ee0994354b46c374cf2c2b2d97a41a8dee1807c6a9b62"
   name = "github.com/syndtr/goleveldb"
   packages = [
     "leveldb",
@@ -84,18 +100,26 @@
     "leveldb/util",
   ]
   pruneopts = "UT"
-  revision = "ae2bd5eed72d46b28834ec3f60db3a3ebedd8dbd"
+  revision = "2f17a3356c6616cbfc4ae4c38147dc062a68fb0e"
 
 [[projects]]
   branch = "master"
-  digest = "1:4291d8b221716a26c78010cecc8a2d4714557a197b9a47849e8caeba2403e45f"
+  digest = "1:5a65cfd472fc86a25243fa54c417196412aa732dc7fa425c769188105802215a"
+  name = "github.com/taskie/cliplus"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c0c7c134861b6baa2316cc3c4b2275c9e0a4a7db"
+
+[[projects]]
+  branch = "master"
+  digest = "1:1542fcb8ae829bc9e63031909642ec44d1b56f803a60932c670257e0f55ff482"
   name = "github.com/taskie/csvt"
   packages = [
     ".",
     "cli",
   ]
   pruneopts = "UT"
-  revision = "95575ae4bae3609142ed29eb7039b2c8e21ea2bb"
+  revision = "2ae626b9d5d2dc8e78a632d19c1ac40525e32881"
 
 [[projects]]
   branch = "master"
@@ -110,25 +134,25 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1834996d3b6208b653dff141fb3e6ca6481f49733168daa194d72a5df48c7bec"
+  digest = "1:b0f41a9a6897d3f8a9164c9b9899f79cf466f019820cf8117f015be1b9a2dcb2"
   name = "github.com/taskie/gtp"
   packages = [
     ".",
     "cli",
   ]
   pruneopts = "UT"
-  revision = "f19ff790c79014b78851edbc22aab38eee9d73d4"
+  revision = "194f079fbeccbedc9e2019f744a919bb56f399be"
 
 [[projects]]
   branch = "master"
-  digest = "1:d3807a247d9f6c9cab1f83f0af0065fc3abae37d22da3a6807338acc1def90b3"
+  digest = "1:790c0137c3d4974b708892199a31c2d55744bfe0d58dbf27987ed004cb1a1294"
   name = "github.com/taskie/jc"
   packages = [
     ".",
     "cli",
   ]
   pruneopts = "UT"
-  revision = "4f02d64fa98993e2d2d3d5587e2e46f661bcaf16"
+  revision = "efda9a4748ea77e79f22bf94fa0e5611102b7767"
 
 [[projects]]
   branch = "master"
@@ -143,11 +167,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:06bcc3585cb24f9ef845ca7f0ee9f4378949a1a415cfc1a50994243f4ce740dd"
+  digest = "1:013912793e0d63e08edf38d7318f7938d200d262417d5a89ee2ebb3c96ae6420"
   name = "github.com/taskie/osplus"
   packages = ["."]
   pruneopts = "UT"
-  revision = "5e11c86f66e9454bcbfc4e2f65ae685d5334bada"
+  revision = "17ac41fec7b25afa849d8903659e47934dc906fc"
 
 [[projects]]
   digest = "1:b24d38b282bacf9791408a080f606370efa3d364e4b5fd9ba0f7b87786d3b679"
@@ -158,23 +182,23 @@
   version = "v1.20.0"
 
 [[projects]]
-  digest = "1:3c1529ffdd2bdcdcb06d5c05f7430c83d220d8dd5482e24dbb81596e44434feb"
+  digest = "1:3810ea14d85aabc511e032f8c817e4f2276af72ea4346f223725e0aaaf1f5c10"
   name = "github.com/vmihailenco/msgpack"
   packages = [
     ".",
     "codes",
   ]
   pruneopts = "UT"
-  revision = "935c5b540faab4d4922ae6f1fddcf77a726f259c"
-  version = "v4.0.0"
+  revision = "b962d79429a3c5135cca9ed528943f1551ec04df"
+  version = "v4.0.2"
 
 [[projects]]
   branch = "master"
-  digest = "1:3f3a05ae0b95893d90b9b3b5afdb79a9b3d96e4e36e099d841ae602e4aca0da8"
+  digest = "1:fde12c4da6237363bf36b81b59aa36a43d28061167ec4acb0d41fc49464e28b9"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "UT"
-  revision = "0e37d006457bf46f9e6692014ba72ef82c33022c"
+  revision = "74369b46fc6756741c016591724fd1cb8e26845f"
 
 [[projects]]
   branch = "master"
@@ -182,18 +206,18 @@
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "UT"
-  revision = "2f5d2388922f370f4355f327fcf4cfe9f5583908"
+  revision = "3a22650c66bd7f4fb6d1e8072ffd7b75c8a27898"
 
 [[projects]]
   branch = "master"
-  digest = "1:4d2869b8df54b3a687c426758d0891720e8bedfa6ff5d472671ce1d31d29bdfb"
+  digest = "1:0d703f14f9bbbe1070ff0ce86d749dcbc9d68fb0ae554252c09bd4bb37a072e7"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "UT"
-  revision = "d47a0f3392421c5624713c9a19fe781f651f8a50"
+  revision = "983097b1a8a340cd1cc7df17d735154d89e10b1a"
 
 [[projects]]
   digest = "1:fc3e61b10647ddcee206a5431707878c043faeb5a1cef6de1e0f1d3a2147bcfa"
@@ -211,7 +235,7 @@
   version = "v0.3.0"
 
 [[projects]]
-  digest = "1:9c89d32a15e9941a6d5c396cc54f9afbcca6ea349b33d997d72119a7a67803f4"
+  digest = "1:56dfffc6e6ceeaebb6db73e02a846a92a850c53130078682993bd028a2ef717d"
   name = "google.golang.org/appengine"
   packages = [
     ".",
@@ -225,21 +249,22 @@
     "internal/remote_api",
   ]
   pruneopts = "UT"
-  revision = "ae0ab99deb4dc413a2b4bd6c8bdd0eb67f1e4d06"
-  version = "v1.2.0"
+  revision = "e9657d882bb81064595ca3b56cbe2546bbabf7b1"
+  version = "v1.4.0"
 
 [[projects]]
-  digest = "1:342378ac4dcb378a5448dd723f0784ae519383532f5e70ade24132c4c8693202"
+  digest = "1:4d2e5a73dc1500038e504a8d78b986630e3626dc027bc030ba5c75da257cdb96"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   pruneopts = "UT"
-  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
-  version = "v2.2.1"
+  revision = "51d6538a90f86fe93ac480b35f37b2be17fef232"
+  version = "v2.2.2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/taskie/cliplus",
     "github.com/taskie/csvt/cli",
     "github.com/taskie/fwv/cli",
     "github.com/taskie/gtp/cli",
