@@ -14,7 +14,9 @@ go install -ldflags "-s -w" github.com/taskie/ore
 * <https://github.com/taskie/jc>
 * <https://github.com/taskie/csvt>
 * <https://github.com/taskie/fwv>
-* <https://github.com/taskie/levelet>
+* <https://github.com/taskie/pity>
+* <https://github.com/taskie/rltee>
+* <https://github.com/taskie/gfp>
 
 ## Usage
 

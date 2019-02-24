@@ -10,12 +10,28 @@
   version = "v0.3.1"
 
 [[projects]]
+  digest = "1:b95738a1e6ace058b5b8544303c0871fc01d224ef0d672f778f696265d0f2917"
+  name = "github.com/chzyer/readline"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "62c6fe6193755f722b8b8788aa7357be55a50ff1"
+  version = "v1.4"
+
+[[projects]]
   digest = "1:865079840386857c809b72ce300be7580cb50d3d3129ce11bf9aa6ca2bc1934a"
   name = "github.com/fatih/color"
   packages = ["."]
   pruneopts = "UT"
   revision = "5b77d2a35fb0ede96d138fc9a99f5c9b6aef11b4"
   version = "v1.7.0"
+
+[[projects]]
+  digest = "1:abeb38ade3f32a92943e5be54f55ed6d6e3b6602761d74b4aab4c9dd45c18abd"
+  name = "github.com/fsnotify/fsnotify"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
+  version = "v1.4.7"
 
 [[projects]]
   digest = "1:97df918963298c287643883209a2c3f642e6593379f97ab400c2a2e219ab647d"
@@ -26,12 +42,39 @@
   version = "v1.2.0"
 
 [[projects]]
+  digest = "1:c0d19ab64b32ce9fe5cf4ddceba78d5bc9807f0016db6b1183599da3dcc24d10"
+  name = "github.com/hashicorp/hcl"
+  packages = [
+    ".",
+    "hcl/ast",
+    "hcl/parser",
+    "hcl/printer",
+    "hcl/scanner",
+    "hcl/strconv",
+    "hcl/token",
+    "json/parser",
+    "json/scanner",
+    "json/token",
+  ]
+  pruneopts = "UT"
+  revision = "8cb6e5b959231cc1119e43259c4a608f9c51a241"
+  version = "v1.0.0"
+
+[[projects]]
   branch = "master"
-  digest = "1:4a0c6bb4805508a6287675fac876be2ac1182539ca8a32468d8128882e9d5009"
-  name = "github.com/golang/snappy"
+  digest = "1:89cd2208bdeb192cc83ee287216af3c987fc87a90b9087718ad6631b636cefcf"
+  name = "github.com/iancoleman/strcase"
   packages = ["."]
   pruneopts = "UT"
-  revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
+  revision = "3605ed457bf7f8caa1371b4fafadadc026673479"
+
+[[projects]]
+  digest = "1:870d441fe217b8e689d7949fef6e43efbc787e50f200cb1e70dbca9204a1d6be"
+  name = "github.com/inconshreveable/mousetrap"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "76626ae9c91c4f2a10f34cad8ce83ea42c93bb75"
+  version = "v1.0"
 
 [[projects]]
   digest = "1:a2cff208d4759f6ba1b1cd228587b0a1869f95f22542ec9cd17fff64430113c7"
@@ -50,12 +93,36 @@
   version = "v1.3.0"
 
 [[projects]]
+  digest = "1:16dd6b893b78a50564cdde1d9f7ea67224dece11bb0886bd882f1dc3dc1d440d"
+  name = "github.com/k0kubun/pp"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "027a6d1765d673d337e687394dbe780dd64e2a1e"
+  version = "v2.3.0"
+
+[[projects]]
   digest = "1:0a69a1c0db3591fcefb47f115b224592c8dfa4368b7ba9fae509d5e16cdc95c8"
   name = "github.com/konsorten/go-windows-terminal-sequences"
   packages = ["."]
   pruneopts = "UT"
   revision = "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242"
   version = "v1.0.1"
+
+[[projects]]
+  digest = "1:29d28429a93b076908a36420a7ecb2bf429d24c15a4b5e2c220ea00fc84b71af"
+  name = "github.com/kr/pty"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "db8e3cd836b82e82e0a9c8edc6896967dd31374f"
+  version = "v1.1.3"
+
+[[projects]]
+  digest = "1:c568d7727aa262c32bdf8a3f7db83614f7af0ed661474b24588de635c20024c7"
+  name = "github.com/magiconair/properties"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c2353362d570a7bfa228149c62842019201cfb71"
+  version = "v1.8.0"
 
 [[projects]]
   digest = "1:c658e84ad3916da105a761660dcaeb01e63416c8ec7bc62256a9b411a05fcd67"
@@ -66,12 +133,36 @@
   version = "v0.0.9"
 
 [[projects]]
-  digest = "1:0981502f9816113c9c8c4ac301583841855c8cf4da8c72f696b3ebedf6d0e4e5"
+  digest = "1:b5cf82c3199c040b82e2bb3fbcbcf6771c2759f9c6b839621b0714c822167581"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
   pruneopts = "UT"
-  revision = "6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c"
-  version = "v0.0.4"
+  revision = "a6dda38a851a575e6799957cdd53ffe0b3fdd90f"
+  version = "v0.0.5"
+
+[[projects]]
+  digest = "1:5d231480e1c64a726869bc4142d270184c419749d34f167646baa21008eb0a79"
+  name = "github.com/mitchellh/go-homedir"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "af06845cf3004701891bf4fdb884bfe4920b3727"
+  version = "v1.1.0"
+
+[[projects]]
+  digest = "1:53bc4cd4914cd7cd52139990d5170d6dc99067ae31c56530621b18b35fc30318"
+  name = "github.com/mitchellh/mapstructure"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "3536a929edddb9a5b34bd6861dc4a9647cb459fe"
+  version = "v1.1.2"
+
+[[projects]]
+  digest = "1:95741de3af260a92cc5c7f3f3061e85273f5a81b5db20d4bd68da74bd521675e"
+  name = "github.com/pelletier/go-toml"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c01d1270ff3e442a8a57cddc1c92dc1138598194"
+  version = "v1.2.0"
 
 [[projects]]
   digest = "1:87c2e02fb01c27060ccc5ba7c5a407cc91147726f8f40b70cceeedbc52b1f3a8"
@@ -82,25 +173,55 @@
   version = "v1.3.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:685fdfea42d825ebd39ee0994354b46c374cf2c2b2d97a41a8dee1807c6a9b62"
-  name = "github.com/syndtr/goleveldb"
+  digest = "1:3e39bafd6c2f4bf3c76c3bfd16a2e09e016510ad5db90dc02b88e2f565d6d595"
+  name = "github.com/spf13/afero"
   packages = [
-    "leveldb",
-    "leveldb/cache",
-    "leveldb/comparer",
-    "leveldb/errors",
-    "leveldb/filter",
-    "leveldb/iterator",
-    "leveldb/journal",
-    "leveldb/memdb",
-    "leveldb/opt",
-    "leveldb/storage",
-    "leveldb/table",
-    "leveldb/util",
+    ".",
+    "mem",
   ]
   pruneopts = "UT"
-  revision = "2f17a3356c6616cbfc4ae4c38147dc062a68fb0e"
+  revision = "f4711e4db9e9a1d3887343acb72b2bbfc2f686f5"
+  version = "v1.2.1"
+
+[[projects]]
+  digest = "1:08d65904057412fc0270fc4812a1c90c594186819243160dc779a402d4b6d0bc"
+  name = "github.com/spf13/cast"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8c9545af88b134710ab1cd196795e7f2388358d7"
+  version = "v1.3.0"
+
+[[projects]]
+  digest = "1:645cabccbb4fa8aab25a956cbcbdf6a6845ca736b2c64e197ca7cbb9d210b939"
+  name = "github.com/spf13/cobra"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "ef82de70bb3f60c65fb8eebacbb2d122ef517385"
+  version = "v0.0.3"
+
+[[projects]]
+  digest = "1:68ea4e23713989dc20b1bded5d9da2c5f9be14ff9885beef481848edd18c26cb"
+  name = "github.com/spf13/jwalterweatherman"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "4a4406e478ca629068e7768fc33f3f044173c0a6"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:c1b1102241e7f645bc8e0c22ae352e8f0dc6484b6cb4d132fa9f24174e0119e2"
+  name = "github.com/spf13/pflag"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "298182f68c66c05229eb03ac171abe6e309ee79a"
+  version = "v1.0.3"
+
+[[projects]]
+  digest = "1:de37e343c64582d7026bf8ab6ac5b22a72eac54f3a57020db31524affed9f423"
+  name = "github.com/spf13/viper"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "6d33b5a963d922d182c91e8a1c88d81fd150cfd4"
+  version = "v1.3.1"
 
 [[projects]]
   branch = "master"
@@ -112,74 +233,101 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1542fcb8ae829bc9e63031909642ec44d1b56f803a60932c670257e0f55ff482"
+  digest = "1:e9597e63ef46b407e7ea1289874cf86ee38f1f416cffa1dcdcb55b7a4c8a3dda"
   name = "github.com/taskie/csvt"
   packages = [
     ".",
     "cli",
   ]
   pruneopts = "UT"
-  revision = "2ae626b9d5d2dc8e78a632d19c1ac40525e32881"
+  revision = "1890872ace7b37fead30ecf5716d06d57a2e46b1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:c6eb3fb6bed3cffab765e922d768c07eea06fe05eb284be3596b6b7a3b59372e"
+  digest = "1:57fab78084e4c6042ce46c1140c85d9fd98ce8e12855f36bbf0d79d7d6aebb75"
   name = "github.com/taskie/fwv"
   packages = [
     ".",
-    "cli",
+    "cli/fwv",
   ]
   pruneopts = "UT"
-  revision = "8dfd2d4416c8706b5f4a4d65f67e41574080d29c"
+  revision = "e06a3cae021b91b20565f07ad8aabd488d67a2cc"
+  version = "v0.1.0"
 
 [[projects]]
   branch = "master"
-  digest = "1:b0f41a9a6897d3f8a9164c9b9899f79cf466f019820cf8117f015be1b9a2dcb2"
+  digest = "1:2eb00a6088e00359a5884939ae90e13b3ff592d07476d951df2618dcfe56a4ff"
+  name = "github.com/taskie/gfp"
+  packages = [
+    ".",
+    "cli/gfp",
+    "codecs",
+  ]
+  pruneopts = "UT"
+  revision = "a8db19061cd2b6f7a4792fb6af4747c43b2b981f"
+
+[[projects]]
+  branch = "master"
+  digest = "1:e7de08ab0633a6004716157917524c1ea3f565c87241a7ebfc5fc4bcb1156ca5"
   name = "github.com/taskie/gtp"
   packages = [
     ".",
     "cli",
   ]
   pruneopts = "UT"
-  revision = "194f079fbeccbedc9e2019f744a919bb56f399be"
+  revision = "f0ea7e17875ed0c03b7345d119ee2d4dddb11245"
 
 [[projects]]
-  branch = "master"
-  digest = "1:790c0137c3d4974b708892199a31c2d55744bfe0d58dbf27987ed004cb1a1294"
+  digest = "1:1128606d939cf8f42e7a340ddacefc53397942b602cbc8a164c49f966961df8c"
   name = "github.com/taskie/jc"
   packages = [
     ".",
-    "cli",
+    "cli/jc",
+    "codecs",
   ]
   pruneopts = "UT"
-  revision = "efda9a4748ea77e79f22bf94fa0e5611102b7767"
+  revision = "ec7eb47ffa7fe3ac5f7531f1ab7445765213f7a0"
+  version = "v0.1.0"
 
 [[projects]]
-  branch = "master"
-  digest = "1:f96dbc73c15640af3b526d011ff2d6785c1fc8fa7c8780976b9a21d7b865f906"
-  name = "github.com/taskie/levelet"
-  packages = [
-    ".",
-    "cli",
-  ]
-  pruneopts = "UT"
-  revision = "c7566697fafee4a9310ce72305af267eb50e65f9"
-
-[[projects]]
-  branch = "master"
-  digest = "1:013912793e0d63e08edf38d7318f7938d200d262417d5a89ee2ebb3c96ae6420"
+  digest = "1:5f1b5d62c23486504985bcdbfc73e050f394ef330c25a7083499a31aa958fdbd"
   name = "github.com/taskie/osplus"
   packages = ["."]
   pruneopts = "UT"
-  revision = "17ac41fec7b25afa849d8903659e47934dc906fc"
+  revision = "6f5652feeaf1fbd08e773c560fe1673fd569e6d1"
+  version = "v0.1.2"
 
 [[projects]]
-  digest = "1:b24d38b282bacf9791408a080f606370efa3d364e4b5fd9ba0f7b87786d3b679"
-  name = "github.com/urfave/cli"
-  packages = ["."]
+  digest = "1:dc0d11368d64b03c6fcd1edeb3c7cc4b17fd3a970ab0376eb6595066cfda0d4d"
+  name = "github.com/taskie/pity"
+  packages = [
+    ".",
+    "cli/pity",
+  ]
   pruneopts = "UT"
-  revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
-  version = "v1.20.0"
+  revision = "3a47f909480660a0127abcaa0463be43b202c545"
+  version = "v0.1.3"
+
+[[projects]]
+  branch = "master"
+  digest = "1:a5db10eb8d1544fc8b55380d21bebd851af7aff75d635c6bd3967697787f3c71"
+  name = "github.com/taskie/reinc"
+  packages = [
+    ".",
+    "cli/reinc",
+  ]
+  pruneopts = "UT"
+  revision = "6cfa447c5e394a6349fb9bb2d69a46a1d47e7629"
+
+[[projects]]
+  branch = "master"
+  digest = "1:ecf2bc331ecca2aff688670a85905ef034388f61b388c472bfed48d10b5b28a2"
+  name = "github.com/taskie/rltee"
+  packages = [
+    ".",
+    "cli/rltee",
+  ]
+  pruneopts = "UT"
+  revision = "97beb6819e672468fa16d1bb3780339bc869a807"
 
 [[projects]]
   digest = "1:3810ea14d85aabc511e032f8c817e4f2276af72ea4346f223725e0aaaf1f5c10"
@@ -198,7 +346,7 @@
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "UT"
-  revision = "74369b46fc6756741c016591724fd1cb8e26845f"
+  revision = "ffb98f73852f696ea2bb21a617a5c4b3e067a439"
 
 [[projects]]
   branch = "master"
@@ -210,17 +358,17 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:0d703f14f9bbbe1070ff0ce86d749dcbc9d68fb0ae554252c09bd4bb37a072e7"
+  digest = "1:80200f57d482f61334a482a046ddedbad77c04dbec6ab81a4e1b3c6adbdfadef"
   name = "golang.org/x/sys"
   packages = [
     "unix",
     "windows",
   ]
   pruneopts = "UT"
-  revision = "983097b1a8a340cd1cc7df17d735154d89e10b1a"
+  revision = "cd391775e71e684db52b63df9affd58269495083"
 
 [[projects]]
-  digest = "1:fc3e61b10647ddcee206a5431707878c043faeb5a1cef6de1e0f1d3a2147bcfa"
+  digest = "1:5a8c9713f32ff4b05072d1eb87b1b2c3feacb061c1300519cbe12c946a853500"
   name = "golang.org/x/text"
   packages = [
     "internal/gen",
@@ -228,6 +376,7 @@
     "internal/ucd",
     "transform",
     "unicode/cldr",
+    "unicode/norm",
     "width",
   ]
   pruneopts = "UT"
@@ -266,10 +415,13 @@
   input-imports = [
     "github.com/taskie/cliplus",
     "github.com/taskie/csvt/cli",
-    "github.com/taskie/fwv/cli",
+    "github.com/taskie/fwv/cli/fwv",
+    "github.com/taskie/gfp/cli/gfp",
     "github.com/taskie/gtp/cli",
-    "github.com/taskie/jc/cli",
-    "github.com/taskie/levelet/cli",
+    "github.com/taskie/jc/cli/jc",
+    "github.com/taskie/pity/cli/pity",
+    "github.com/taskie/reinc/cli/reinc",
+    "github.com/taskie/rltee/cli/rltee",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
