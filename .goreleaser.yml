@@ -1,0 +1,10 @@
+builds:
+  - main: main.go
+    binary: ore
+    goos:
+      # - windows
+      - darwin
+      - linux
+    goarch:
+      - amd64
+    ldflags: '-s -w'

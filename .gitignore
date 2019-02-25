@@ -53,3 +53,5 @@ _testmain.go
 /ore
 /test/coverage
 /vendor
+.env
+/dist

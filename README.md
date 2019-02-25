@@ -4,8 +4,12 @@ ore（俺）utils, packed in BusyBox-like way
 
 ## Install
 
+Please check https://github.com/taskie/ore/releases
+
+or
+
 ```sh
-go install -ldflags "-s -w" github.com/taskie/ore
+go get -u github.com/taskie/ore
 ```
 
 ## Tools
