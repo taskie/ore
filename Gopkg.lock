@@ -217,14 +217,6 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:5a65cfd472fc86a25243fa54c417196412aa732dc7fa425c769188105802215a"
-  name = "github.com/taskie/cliplus"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "c0c7c134861b6baa2316cc3c4b2275c9e0a4a7db"
-
-[[projects]]
-  branch = "master"
   digest = "1:cf45e97f0249f86c7ddde8813f9cf29d8ec8f57aa1921670d7cf9a36ec19055b"
   name = "github.com/taskie/csvt"
   packages = [
@@ -405,12 +397,14 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/taskie/cliplus",
+    "github.com/sirupsen/logrus",
+    "github.com/spf13/cobra",
     "github.com/taskie/csvt/cli/csvt",
     "github.com/taskie/fwv/cli/fwv",
     "github.com/taskie/gfp/cli/gfp",
     "github.com/taskie/gtp/cli/gtp",
     "github.com/taskie/jc/cli/jc",
+    "github.com/taskie/osplus",
     "github.com/taskie/pity/cli/pity",
     "github.com/taskie/reinc/cli/reinc",
     "github.com/taskie/rltee/cli/rltee",
