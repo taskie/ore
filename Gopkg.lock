@@ -77,14 +77,6 @@
   version = "v1.0"
 
 [[projects]]
-  digest = "1:a2cff208d4759f6ba1b1cd228587b0a1869f95f22542ec9cd17fff64430113c7"
-  name = "github.com/jessevdk/go-flags"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "c6ca198ec95c841fdb89fc0de7496fed11ab854e"
-  version = "v1.4.0"
-
-[[projects]]
   digest = "1:ecd9aa82687cf31d1585d4ac61d0ba180e42e8a6182b85bd785fcca8dfeefc1b"
   name = "github.com/joho/godotenv"
   packages = ["."]
@@ -233,14 +225,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:e9597e63ef46b407e7ea1289874cf86ee38f1f416cffa1dcdcb55b7a4c8a3dda"
+  digest = "1:cf45e97f0249f86c7ddde8813f9cf29d8ec8f57aa1921670d7cf9a36ec19055b"
   name = "github.com/taskie/csvt"
   packages = [
     ".",
-    "cli",
+    "cli/csvt",
   ]
   pruneopts = "UT"
-  revision = "1890872ace7b37fead30ecf5716d06d57a2e46b1"
+  revision = "f28b96e3ab1d1e9c1fcb892a0cd75af7f3888cd6"
 
 [[projects]]
   digest = "1:57fab78084e4c6042ce46c1140c85d9fd98ce8e12855f36bbf0d79d7d6aebb75"
@@ -267,14 +259,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:e7de08ab0633a6004716157917524c1ea3f565c87241a7ebfc5fc4bcb1156ca5"
+  digest = "1:4efab0d28246325a6c680ef1424e0364404f2105eb65ab2b4ee4bd7c4292224c"
   name = "github.com/taskie/gtp"
   packages = [
     ".",
-    "cli",
+    "cli/gtp",
   ]
   pruneopts = "UT"
-  revision = "f0ea7e17875ed0c03b7345d119ee2d4dddb11245"
+  revision = "6b5fb236c5f0af24387e3a667949f928548a9edd"
 
 [[projects]]
   digest = "1:1128606d939cf8f42e7a340ddacefc53397942b602cbc8a164c49f966961df8c"
@@ -346,7 +338,7 @@
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
   pruneopts = "UT"
-  revision = "ffb98f73852f696ea2bb21a617a5c4b3e067a439"
+  revision = "7f87c0fbb88b590338857bcb720678c2583d4dea"
 
 [[projects]]
   branch = "master"
@@ -354,7 +346,7 @@
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "UT"
-  revision = "3a22650c66bd7f4fb6d1e8072ffd7b75c8a27898"
+  revision = "fe579d43d83210096a79b46dcca0e3721058393a"
 
 [[projects]]
   branch = "master"
@@ -365,7 +357,7 @@
     "windows",
   ]
   pruneopts = "UT"
-  revision = "cd391775e71e684db52b63df9affd58269495083"
+  revision = "cc5685c2db1239775905f3911f0067c0fa74762f"
 
 [[projects]]
   digest = "1:5a8c9713f32ff4b05072d1eb87b1b2c3feacb061c1300519cbe12c946a853500"
@@ -414,10 +406,10 @@
   analyzer-version = 1
   input-imports = [
     "github.com/taskie/cliplus",
-    "github.com/taskie/csvt/cli",
+    "github.com/taskie/csvt/cli/csvt",
     "github.com/taskie/fwv/cli/fwv",
     "github.com/taskie/gfp/cli/gfp",
-    "github.com/taskie/gtp/cli",
+    "github.com/taskie/gtp/cli/gtp",
     "github.com/taskie/jc/cli/jc",
     "github.com/taskie/pity/cli/pity",
     "github.com/taskie/reinc/cli/reinc",

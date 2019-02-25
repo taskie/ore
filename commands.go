@@ -1,10 +1,10 @@
 package main
 
 import (
-	csvtcli "github.com/taskie/csvt/cli"
+	"github.com/taskie/csvt/cli/csvt"
 	"github.com/taskie/fwv/cli/fwv"
 	"github.com/taskie/gfp/cli/gfp"
-	gtpcli "github.com/taskie/gtp/cli"
+	"github.com/taskie/gtp/cli/gtp"
 	"github.com/taskie/jc/cli/jc"
 	"github.com/taskie/pity/cli/pity"
 	"github.com/taskie/reinc/cli/reinc"
@@ -14,8 +14,8 @@ import (
 func getCommands() map[string]func() {
 	return map[string]func(){
 		"jc":    jc.Main,
-		"gtp":   gtpcli.Main,
-		"csvt":  csvtcli.Main,
+		"gtp":   gtp.Main,
+		"csvt":  csvt.Main,
 		"fwv":   fwv.Main,
 		"reinc": reinc.Main,
 		"pity":  pity.Main,
