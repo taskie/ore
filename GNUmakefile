@@ -1,10 +1,15 @@
 .PHONY: build install test fmt coverage dep-init dep-ensure dep-graph pre-commit install-pre-commit
 
+VERSION := $(shell git describe --tags)
+COMMIT := $(shell git rev-parse HEAD)
+DATE := $(shell env TZ= date --iso-8601=seconds)
+LDFLAGS := "-s -w -X main.version=$(VERSION) -X main.commit=$(COMMIT) -X main.date=$(DATE)"
+
 build:
-	go build -v -ldflags "-s -w"
+	go build -v -ldflags $(LDFLAGS)
 
 install:
-	go install -v -ldflags "-s -w"
+	go install -v -ldflags $(LDFLAGS)
 
 test:
 	go test ./...

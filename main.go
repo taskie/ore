@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"path/filepath"
 
@@ -11,15 +12,15 @@ import (
 	"github.com/taskie/gfp/cli/gfp"
 	"github.com/taskie/gtp/cli/gtp"
 	"github.com/taskie/jc/cli/jc"
-	"github.com/taskie/osplus"
 	"github.com/taskie/pity/cli/pity"
 	"github.com/taskie/reinc/cli/reinc"
 	"github.com/taskie/rltee/cli/rltee"
 )
 
 var (
-	version  string
-	revision string
+	version string
+	commit  string
+	date    string
 )
 
 const (
@@ -30,6 +31,8 @@ var Command = &cobra.Command{
 	Use: CommandName,
 }
 
+var SubcommandNames []string
+
 func init() {
 	Command.AddCommand(jc.Command)
 	Command.AddCommand(gtp.Command)
@@ -39,61 +42,22 @@ func init() {
 	Command.AddCommand(pity.Command)
 	Command.AddCommand(rltee.Command)
 	Command.AddCommand(gfp.Command)
-
-	cmdNames := make([]string, 0)
+	SubcommandNames := make([]string, 0)
 	for _, cmd := range Command.Commands() {
-		cmdNames = append(cmdNames, cmd.Name())
+		SubcommandNames = append(SubcommandNames, cmd.Name())
 	}
-
+	Command.AddCommand(generateVersionCommand())
 	Command.AddCommand(&cobra.Command{
-		Use: "link",
+		Use: "list",
 		Run: func(cmd *cobra.Command, args []string) {
-			gopath, err := osplus.GetGoPath()
-			if err != nil {
-				log.Fatal(err)
-			}
-			for _, cmdName := range cmdNames {
-				dst := filepath.Join(gopath, "bin", cmdName)
-				abs, err := filepath.Abs(os.Args[0])
-				if err != nil {
-					log.Warn(err)
-					continue
-				}
-				err = os.Symlink(abs, dst)
-				if err != nil {
-					log.Warn(err)
-				}
+			for _, name := range SubcommandNames {
+				fmt.Println(name)
 			}
 		},
 	})
-	Command.AddCommand(&cobra.Command{
-		Use: "unlink",
-		Run: func(cmd *cobra.Command, args []string) {
-			gopath, err := osplus.GetGoPath()
-			if err != nil {
-				log.Fatal(err)
-			}
-			for _, cmdName := range cmdNames {
-				dst := filepath.Join(gopath, "bin", cmdName)
-				err = os.Remove(dst)
-				if err != nil {
-					log.Warn(err)
-				}
-			}
-		},
-	})
-	Command.AddCommand(&cobra.Command{
-		Use: "bash",
-		Run: func(cmd *cobra.Command, args []string) {
-			Command.GenBashCompletion(os.Stdout)
-		},
-	})
-	Command.AddCommand(&cobra.Command{
-		Use: "zsh",
-		Run: func(cmd *cobra.Command, args []string) {
-			Command.GenZshCompletion(os.Stdout)
-		},
-	})
+	Command.AddCommand(generateLinkCommand(SubcommandNames))
+	Command.AddCommand(generateUnlinkCommand(SubcommandNames))
+	Command.AddCommand(generateCompletionCommand())
 }
 
 func main() {
