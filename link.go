@@ -18,26 +18,31 @@ func generateLinkCommand(subcommandNames []string) *cobra.Command {
 			if err != nil {
 				log.Fatal(err)
 			}
+			abs, err := exec.LookPath(os.Args[0])
+			if err != nil {
+				log.Warn(err)
+				return
+			}
+			absFI, err := os.Stat(abs)
+			if err != nil {
+				log.Warn(err)
+				return
+			}
 			for _, name := range subcommandNames {
 				dst := filepath.Join(gopath, "bin", name)
-				abs, err := exec.LookPath(os.Args[0])
-				if err != nil {
-					log.Warn(err)
-					continue
-				}
-				ln, err := os.Readlink(dst)
+				dstFI, err := os.Stat(dst)
 				if err == nil {
 					// link exists
-					if ln == abs {
+					if os.SameFile(absFI, dstFI) {
 						continue
 					} else if force, err := cmd.Flags().GetBool("force"); err == nil && force {
 						os.Remove(dst)
 					} else {
-						log.Warnf("%s is not %s, but %s", dst, abs, ln)
+						log.Warnf("%s is not %s", dst, abs)
 						continue
 					}
 				}
-				err = os.Symlink(abs, dst)
+				err = os.Link(abs, dst)
 				if err != nil {
 					log.Warn(err)
 					continue
@@ -57,21 +62,26 @@ func generateUnlinkCommand(subcommandNames []string) *cobra.Command {
 			if err != nil {
 				log.Fatal(err)
 			}
+			abs, err := exec.LookPath(os.Args[0])
+			if err != nil {
+				log.Warn(err)
+				return
+			}
+			absFI, err := os.Stat(abs)
+			if err != nil {
+				log.Warn(err)
+				return
+			}
 			for _, name := range subcommandNames {
 				dst := filepath.Join(gopath, "bin", name)
-				abs, err := exec.LookPath(os.Args[0])
+				dstFI, err := os.Stat(dst)
 				if err != nil {
 					log.Warn(err)
 					continue
 				}
-				ln, err := os.Readlink(dst)
-				if err != nil {
-					log.Warn(err)
-					continue
-				}
-				if ln != abs {
+				if !os.SameFile(absFI, dstFI) {
 					if force, err := cmd.Flags().GetBool("force"); err == nil && !force {
-						log.Warnf("%s is not %s, but %s", dst, abs, ln)
+						log.Warnf("%s is not %s", dst, abs)
 						continue
 					}
 				}

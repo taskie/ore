@@ -67,7 +67,7 @@
 
 [[constraint]]
   branch = "master"
-  name = "github.com/taskie/rltee"
+  name = "github.com/taskie/rlexec"
 
 [prune]
   go-tests = true

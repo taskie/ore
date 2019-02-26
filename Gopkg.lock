@@ -304,14 +304,14 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:ecf2bc331ecca2aff688670a85905ef034388f61b388c472bfed48d10b5b28a2"
-  name = "github.com/taskie/rltee"
+  digest = "1:215c8e5ffb9db108eabeba113ae91f753783014a2a69c5df7ec3696eb264564b"
+  name = "github.com/taskie/rlexec"
   packages = [
     ".",
-    "cli/rltee",
+    "cli/rlexec",
   ]
   pruneopts = "UT"
-  revision = "97beb6819e672468fa16d1bb3780339bc869a807"
+  revision = "1ebde80334d88891628d68ffee7003bd279fa0d6"
 
 [[projects]]
   digest = "1:3810ea14d85aabc511e032f8c817e4f2276af72ea4346f223725e0aaaf1f5c10"
@@ -407,7 +407,7 @@
     "github.com/taskie/osplus",
     "github.com/taskie/pity/cli/pity",
     "github.com/taskie/reinc/cli/reinc",
-    "github.com/taskie/rltee/cli/rltee",
+    "github.com/taskie/rlexec/cli/rlexec",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

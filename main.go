@@ -14,7 +14,7 @@ import (
 	"github.com/taskie/jc/cli/jc"
 	"github.com/taskie/pity/cli/pity"
 	"github.com/taskie/reinc/cli/reinc"
-	"github.com/taskie/rltee/cli/rltee"
+	"github.com/taskie/rlexec/cli/rlexec"
 )
 
 var (
@@ -40,7 +40,7 @@ func init() {
 	Command.AddCommand(fwv.Command)
 	Command.AddCommand(reinc.Command)
 	Command.AddCommand(pity.Command)
-	Command.AddCommand(rltee.Command)
+	Command.AddCommand(rlexec.Command)
 	Command.AddCommand(gfp.Command)
 	SubcommandNames := make([]string, 0)
 	for _, cmd := range Command.Commands() {
