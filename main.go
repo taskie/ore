@@ -18,12 +18,12 @@ import (
 )
 
 var (
-	version string
-	commit  string
-	date    string
+	version, commit, date string
+	verbose, debug        bool
 )
 
 const (
+	Owner       = "taskie"
 	CommandName = "ore"
 )
 
@@ -34,6 +34,9 @@ var Command = &cobra.Command{
 var SubcommandNames []string
 
 func init() {
+	Command.PersistentFlags().BoolVarP(&verbose, "verbose", "v", false, "verbose output")
+	Command.PersistentFlags().BoolVar(&verbose, "debug", false, "debug output")
+
 	Command.AddCommand(jc.Command)
 	Command.AddCommand(gtp.Command)
 	Command.AddCommand(csvt.Command)
@@ -58,9 +61,17 @@ func init() {
 	Command.AddCommand(generateLinkCommand(SubcommandNames))
 	Command.AddCommand(generateUnlinkCommand(SubcommandNames))
 	Command.AddCommand(generateCompletionCommand())
+	Command.AddCommand(generateLatestCommand(Owner, CommandName, version))
 }
 
 func main() {
+	if debug {
+		log.SetLevel(log.DebugLevel)
+	} else if verbose {
+		log.SetLevel(log.InfoLevel)
+	} else {
+		log.SetLevel(log.WarnLevel)
+	}
 	base := filepath.Base(os.Args[0])
 	if base == CommandName {
 		err := Command.Execute()
