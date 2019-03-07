@@ -12,7 +12,6 @@ import (
 	"github.com/taskie/gfp/cli/gfp"
 	"github.com/taskie/gtp/cli/gtp"
 	"github.com/taskie/jc/cli/jc"
-	"github.com/taskie/pity/cli/pity"
 	"github.com/taskie/reinc/cli/reinc"
 	"github.com/taskie/rlexec/cli/rlexec"
 )
@@ -42,9 +41,9 @@ func init() {
 	Command.AddCommand(csvt.Command)
 	Command.AddCommand(fwv.Command)
 	Command.AddCommand(reinc.Command)
-	Command.AddCommand(pity.Command)
 	Command.AddCommand(rlexec.Command)
 	Command.AddCommand(gfp.Command)
+	addExtraCommands()
 	SubcommandNames := make([]string, 0)
 	for _, cmd := range Command.Commands() {
 		SubcommandNames = append(SubcommandNames, cmd.Name())
