@@ -14,13 +14,14 @@ go get -u github.com/taskie/ore
 
 ## Tools
 
-* <https://github.com/taskie/gtp>
-* <https://github.com/taskie/jc>
 * <https://github.com/taskie/csvt>
 * <https://github.com/taskie/fwv>
-* <https://github.com/taskie/pity>
-* <https://github.com/taskie/rlexec>
 * <https://github.com/taskie/gfp>
+* <https://github.com/taskie/gtp>
+* <https://github.com/taskie/jc>
+* <https://github.com/taskie/pity> (linux and darwin only)
+* <https://github.com/taskie/reinc>
+* <https://github.com/taskie/rlexec>
 
 ## Usage
 
