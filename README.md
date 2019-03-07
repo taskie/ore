@@ -29,7 +29,7 @@ go get -u github.com/taskie/ore
 ```sh
 ore gtp -h
 # or
-ln -s "$(which ore)" gtp
+ln "$(which ore)" gtp
 ./gtp -h
 ```
 
@@ -45,6 +45,23 @@ ore link -f  # force
 ```sh
 ore unlink
 ore unlink -f  # force
+```
+
+### Check updates of ore
+
+```sh
+ore latest status
+```
+
+### Install latest ore
+
+```sh
+ore latest install
+ore link -f
+# or
+ore latest download
+ore latest install "ore_${VERSION}_${GOOS}_${GOARCH}.tar.gz"
+ore link -f
 ```
 
 ## Dependency
